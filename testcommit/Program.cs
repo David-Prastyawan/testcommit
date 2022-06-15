@@ -11,15 +11,14 @@ namespace testcommit
         static void Main(string[] args)
         {
             Console.WriteLine("Default Foreground Color: {0}",
-                                  Console.ForegroundColor);
+            Console.ForegroundColor);
 
             // Set the Foreground color to blue
-            Console.ForegroundColor
-                = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Yellow;
 
             // Display current Foreground color
             Console.WriteLine("Changed Foreground Color: {0}",
-                                    Console.ForegroundColor);
+            Console.ForegroundColor);
             Console.ReadKey();
         }
     }
