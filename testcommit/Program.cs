@@ -10,9 +10,16 @@ namespace testcommit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
-            Console.WriteLine("Hello world 1");
-            Console.WriteLine("Hello world 2");
+            Console.WriteLine("Default Foreground Color: {0}",
+                                  Console.ForegroundColor);
+
+            // Set the Foreground color to blue
+            Console.ForegroundColor
+                = ConsoleColor.Blue;
+
+            // Display current Foreground color
+            Console.WriteLine("Changed Foreground Color: {0}",
+                                    Console.ForegroundColor);
             Console.ReadKey();
         }
     }
